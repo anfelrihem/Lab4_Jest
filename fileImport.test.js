@@ -1,4 +1,4 @@
-// fileImport.test.js
+
 const fs = require('fs');
 const { readFileContent } = require('./fileImport');
 
@@ -9,7 +9,7 @@ test('readFileContent reads a file correctly', done => {
     readFileContent(tempFile, (err, data) => {
         expect(err).toBeNull();
         expect(data).toBe('Hello Jest');
-        fs.unlinkSync(tempFile); // حذف الملف بعد الاختبار
+        fs.unlinkSync(tempFile);
         done();
     });
 });
