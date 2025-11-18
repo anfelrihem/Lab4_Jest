@@ -1,4 +1,4 @@
-// fileImport.js
+
 const fs = require('fs');
 
 function readFileContent(fileName, callback) {
@@ -16,7 +16,7 @@ function readFileContent(fileName, callback) {
     });
 }
 
-// إذا تم تشغيل الملف مباشرة من Node
+
 if (require.main === module) {
     const fileName = process.argv[2];
     readFileContent(fileName, (err, data) => {
