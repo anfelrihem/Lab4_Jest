@@ -1,4 +1,4 @@
-// Exercise 2 functions
+
 
 function first(array, n) {
     if (array == null || n <= 0) return [];
