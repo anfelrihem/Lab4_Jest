@@ -1,9 +1,9 @@
-// echo.test.js
+
 const { exf } = require('./echo.js');
 
 describe('Test exf()', () => {
     beforeEach(() => {
-        // تجميد console.log لاختبار عدد مرات النداء فقط
+        
         console.log = jest.fn();
     });
 
